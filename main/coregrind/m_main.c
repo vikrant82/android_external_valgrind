@@ -2660,6 +2660,10 @@ void* memcpy(void *dest, const void *src, SizeT n);
 void* memcpy(void *dest, const void *src, SizeT n) {
    return VG_(memcpy)(dest,src,n);
 }
+void* memmove(void *dest, const void *src, SizeT n);
+void* memmove(void *dest, const void *src, SizeT n) {
+ return VG_(memmove)(dest,src,n);
+}
 void* memset(void *s, int c, SizeT n);
 void* memset(void *s, int c, SizeT n) {
   return VG_(memset)(s,c,n);
